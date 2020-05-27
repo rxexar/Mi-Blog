@@ -1,3 +1,22 @@
+/* Fonts */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"); */
+
+/* Variables */
+
+:root {
+  /*Colors*/
+  --menta-color: #47cfac;
+  --dark-color: #434a54;
+  --white-color: white;
+  --whiteg-color: #e6e9ed;
+  --gray-color: #ccd1d9;
+  --grayB_oscuro-color: #656d78;
+  --black-color: #23282d;
+  --violet-color: #ac92ec;
+  --green-color: #a0d468;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,10 +26,11 @@ body {
   left: 0;
   right: 0;
 }
+
 a {
   text-decoration: none;
   display: inline;
-  color: black;
+  color: var(--black-color);
 }
 
 header {
@@ -23,7 +43,7 @@ header .header_icons_container {
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: #47cfac;
+  background-color: var(--menta-color);
 }
 header .header_icons_container .icons {
   width: 300px;
@@ -36,5 +56,28 @@ header .header_icons_container .icons {
   margin-right: 50px;
 }
 header .icons span {
-  color: white;
+  color: var(--white-color);
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+nav .nav_logo_container {
+  margin-left: 50px;
+}
+nav .nav_logo_container img {
+  width: 220px;
+  margin-top: 10px;
+}
+
+nav .profile_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+nav .profile_link a {
+  color: var(--black-color);
+  border-bottom: 1px solid var(--black-color);
 }
