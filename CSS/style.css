@@ -40,7 +40,7 @@ a {
 
 header {
   width: 100%;
-  height: 140px;
+  height: 50px;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
@@ -63,64 +63,66 @@ header .header_icons_container .icons {
 header .icons span {
   color: var(--white-color);
 }
-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100%;
-}
-nav .nav_logo_container {
-  margin-left: 50px;
-}
-nav .nav_logo_container img {
-  width: 220px;
-  margin-top: 10px;
-}
-
-nav .profile_link {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 50px;
-}
-nav .profile_link a {
-  font-family: var(--RobotoMono-font-family);
-  color: var(--black-color);
-  border-bottom: 1px solid var(--black-color);
-}
-
-/* --------------------home------------------------------ */
-
-.home_main {
+main {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  height: 100%;
   background-image: url(/images/Cover.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 140px);
+  background-attachment: fixed;
+  justify-items: center;
+  height: 100vh;
 }
-.home_main section {
+main .nav_logo_container {
+  margin-left: 50px;
+}
+main .nav_logo_container img {
+  width: 220px;
+  margin-top: 50px;
+}
+
+main .profile_link {
+  grid-column: 3;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  margin-top: 70px;
+}
+main .profile_link a {
+  font-family: var(--RobotoMono-font-family);
+  font-size: 20px;
+  color: var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+}
+
+/* --------------------home------------------------------ */
+.home_main {
+  display: grid;
+  grid-column: 2;
+  height: 100%;
+}
+.home_main div {
   display: grid;
   grid-column: 2;
   justify-items: center;
   height: 350px;
-  margin-top: 80px;
 }
 .home_main_text {
   font-family: "Roboto Mono", monospace;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
-  letter-spacing: 10px;
   color: var(--white-color);
   text-align: center;
 }
 .home_main_button {
-  width: 110px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   background-color: var(--menta-color);
   display: grid;
   align-items: center;
+  margin-bottom: 100px;
+  border: none;
 }
 .home_main_button a {
   font-weight: 700;
