@@ -25,13 +25,16 @@
 body {
   margin: 0;
   padding: 0;
-  position: fixed; /*no permite hacer scroll a la pantalla*/
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  font-family: var(--RobotoMono-font-family);
 }
 /* --------------------Header------------------------------ */
+#home_body {
+  position: fixed; /*no permite hacer scroll a la pantalla*/
+}
 a {
   text-decoration: none;
   display: inline;
@@ -64,7 +67,7 @@ header .icons span {
   color: var(--white-color);
 }
 /* --------------------Main------------------------------ */
-#main_index {
+#main_home {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   background-image: url(/images/Cover.png);
@@ -75,22 +78,22 @@ header .icons span {
   justify-items: center;
   height: 100vh;
 }
-#main_index .nav_logo_container {
+#main_home .nav_logo_container {
   margin-left: 50px;
 }
-#main_index .nav_logo_container img {
+#main_home .nav_logo_container img {
   width: 220px;
   margin-top: 50px;
 }
 
-#main_index .profile_link {
+#main_home .profile_link {
   grid-column: 3;
   align-items: center;
   justify-content: center;
   margin-right: 50px;
   margin-top: 70px;
 }
-#main_index .profile_link a {
+#main_home .profile_link a {
   font-family: var(--RobotoMono-font-family);
   font-size: 20px;
   color: var(--white-color);
@@ -155,4 +158,37 @@ nav .profile_link a {
   font-size: 20px;
   color: var(--black-color);
   border-bottom: 1px solid var(--black-color);
+}
+
+.blogs_main {
+  display: grid;
+}
+.blogs_news_container {
+  background-color: var(--gray-color);
+  padding: 0 50px 40px;
+}
+.blogs_main_new {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+.blogs_news_img_container {
+  grid-column: 1;
+}
+.blogs_news_img_container img {
+  width: 85%;
+}
+.blogs_news_info_container {
+  grid-column: 2;
+}
+.blogs_news_info_container p {
+  margin-bottom: 35px;
+}
+.blogs_posts_container {
+  padding: 0 50px 40px;
+}
+.blogs_posts_container h3 {
+  border-bottom: 1px solid var(--gray-color);
+  padding-bottom: 20px;
+  text-align: center;
 }
