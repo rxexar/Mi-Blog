@@ -64,7 +64,7 @@ header .icons span {
   color: var(--white-color);
 }
 /* --------------------Main------------------------------ */
-main {
+#main_index {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   background-image: url(/images/Cover.png);
@@ -75,22 +75,22 @@ main {
   justify-items: center;
   height: 100vh;
 }
-main .nav_logo_container {
+#main_index .nav_logo_container {
   margin-left: 50px;
 }
-main .nav_logo_container img {
+#main_index .nav_logo_container img {
   width: 220px;
   margin-top: 50px;
 }
 
-main .profile_link {
+#main_index .profile_link {
   grid-column: 3;
   align-items: center;
   justify-content: center;
   margin-right: 50px;
   margin-top: 70px;
 }
-main .profile_link a {
+#main_index .profile_link a {
   font-family: var(--RobotoMono-font-family);
   font-size: 20px;
   color: var(--white-color);
