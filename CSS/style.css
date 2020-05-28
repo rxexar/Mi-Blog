@@ -16,6 +16,10 @@
   --black-color: #23282d;
   --violet-color: #ac92ec;
   --green-color: #a0d468;
+  /* Fonts */
+  --Roboto-font-family: "Roboto", sans-serif;
+  --RobotoMono-font-family: "Roboto Mono", monospace;
+  --RobotoSlab--font-family: "Roboto Slab", serif;
 }
 
 body {
@@ -79,6 +83,7 @@ nav .profile_link {
   margin-right: 50px;
 }
 nav .profile_link a {
+  font-family: var(--RobotoMono-font-family);
   color: var(--black-color);
   border-bottom: 1px solid var(--black-color);
 }
@@ -107,6 +112,17 @@ nav .profile_link a {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 10px;
-  color: var(--whiteg-color);
+  color: var(--white-color);
   text-align: center;
+}
+.home_main_button {
+  width: 110px;
+  height: 50px;
+  background-color: var(--menta-color);
+  display: grid;
+  align-items: center;
+}
+.home_main_button a {
+  font-weight: 700;
+  font-size: 18px;
 }
