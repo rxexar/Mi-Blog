@@ -132,7 +132,7 @@ header .icons span {
   font-size: 18px;
 }
 
-/* --------------------------PaginaBlogsNAV---------------------------- */
+/* --------------------------PagesBlogsNAVandFooter---------------------------- */
 
 nav {
   display: grid;
@@ -159,6 +159,18 @@ nav .profile_link a {
   color: var(--black-color);
   border-bottom: 1px solid var(--black-color);
 }
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: var(--black-color);
+  border-top: 35px solid var(--menta-color);
+  text-align: center;
+}
+footer p {
+  color: var(--white-color);
+  margin-top: 30px;
+}
+/* -----------------------------PageBlogs-------------------------------- */
 
 .blogs_main {
   display: grid;
@@ -191,4 +203,21 @@ nav .profile_link a {
   border-bottom: 1px solid var(--gray-color);
   padding-bottom: 20px;
   text-align: center;
+}
+.blogs_button {
+  border: 1px solid var(--menta-color);
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.blogs_posts_container .posts_container {
+  display: inline-block;
+  padding-left: 10px;
+  max-width: 30%;
+  margin-bottom: 50px;
+}
+.blogs_posts_container .posts_container p {
+  margin-bottom: 35px;
+}
+.blogs_posts_container .posts_container img {
+  width: 100%;
 }
