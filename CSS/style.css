@@ -171,6 +171,10 @@ footer p {
   margin-top: 30px;
 }
 /* -----------------------------PageBlogs-------------------------------- */
+.grid_container {
+  max-width: 980px;
+  margin: auto;
+}
 
 .blogs_main {
   display: grid;
@@ -183,6 +187,8 @@ footer p {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr;
+  max-width: 980px; /* el mismo efecto que hace la clase .grid_container pero aplicada solo a esta seccion*/
+  margin: auto;
 }
 .blogs_news_img_container {
   grid-column: 1;
@@ -221,3 +227,4 @@ footer p {
 .blogs_posts_container .posts_container img {
   width: 100%;
 }
+/* -----------------------------PageBlog-------------------------------- */
