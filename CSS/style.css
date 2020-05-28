@@ -128,3 +128,31 @@ main .profile_link a {
   font-weight: 700;
   font-size: 18px;
 }
+
+/* --------------------------PaginaBlogsNAV---------------------------- */
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+nav .nav_logo_container {
+  margin-left: 50px;
+}
+nav .nav_logo_container img {
+  width: 220px;
+  margin-top: 10px;
+}
+
+nav .profile_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+nav .profile_link a {
+  font-family: var(--RobotoMono-font-family);
+  font-size: 20px;
+  color: var(--black-color);
+  border-bottom: 1px solid var(--black-color);
+}
