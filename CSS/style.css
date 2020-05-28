@@ -31,7 +31,7 @@ body {
   left: 0;
   right: 0;
 }
-
+/* --------------------Header------------------------------ */
 a {
   text-decoration: none;
   display: inline;
@@ -63,6 +63,7 @@ header .header_icons_container .icons {
 header .icons span {
   color: var(--white-color);
 }
+/* --------------------Main------------------------------ */
 main {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -95,8 +96,6 @@ main .profile_link a {
   color: var(--white-color);
   border-bottom: 1px solid var(--white-color);
 }
-
-/* --------------------home------------------------------ */
 .home_main {
   display: grid;
   grid-column: 2;
@@ -114,6 +113,7 @@ main .profile_link a {
   font-weight: 700;
   color: var(--white-color);
   text-align: center;
+  margin-top: 0;
 }
 .home_main_button {
   width: 150px;
