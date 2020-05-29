@@ -228,3 +228,45 @@ footer p {
   width: 100%;
 }
 /* -----------------------------PageBlog-------------------------------- */
+
+.blogpost_img_container {
+  padding: 0 50px 40px;
+}
+.blogpost_img_container img {
+  width: 100%;
+}
+.blogpost_main_container {
+  padding: 0 50px 40px;
+}
+.blogpost_main_container h3 {
+  border-bottom: 1px solid var(--gray-color);
+  padding-bottom: 20px;
+}
+.blogpost_main_container article h1 {
+  font-size: 35px;
+}
+/* --------------------contact----------------------- */
+.contact_main_conteiner {
+  width: 100%;
+  min-height: 250px;
+  background-color: var(--gray-color);
+  text-align: center;
+  padding-bottom: 50px;
+}
+.contact_main_conteiner div {
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
+}
+.contact_main_conteiner div a {
+  border-bottom: 1px solid var(--black-color);
+  padding-bottom: 5px;
+}
+.contact_main_conteiner .contact_left,
+.contact_right {
+  text-align: initial;
+  margin-top: 85px;
+}
+.contact_main_conteiner img {
+  width: 100px;
+}
