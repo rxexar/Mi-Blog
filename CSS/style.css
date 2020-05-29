@@ -7,15 +7,15 @@
 
 :root {
   /*Colors*/
-  --menta-color: #47cfac;
+  --menta-color: #ff5d6c;
   --dark-color: #434a54;
   --white-color: white;
   --whiteg-color: #e6e9ed;
-  --gray-color: #ccd1d9;
+  --gray-color: #fbceb5;
   --grayB_oscuro-color: #656d78;
   --black-color: #23282d;
   --violet-color: #ac92ec;
-  --green-color: #a0d468;
+  --green-color: #8cba51;
   /* Fonts */
   --Roboto-font-family: "Roboto", sans-serif;
   --RobotoMono-font-family: "Roboto Mono", monospace;
@@ -69,11 +69,11 @@ header .icons span {
 /* --------------------Main------------------------------ */
 
 #main_home {
-  background-image: url(/images/Cover.png);
+  background-image: url(/images/64489.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /*  background-attachment: fixed; */
   justify-items: center;
   height: 100vh;
 }
@@ -86,10 +86,10 @@ header .icons span {
   display: flex;
   grid-column: 1;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .home_main_conteiner .nav_logo_container img {
-  width: 220px;
+  width: 150px;
 }
 
 .home_main_conteiner .profile_link {
@@ -98,13 +98,17 @@ header .icons span {
   align-items: center;
   justify-content: flex-end;
   margin-right: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .home_main_conteiner .profile_link a {
   font-family: var(--RobotoMono-font-family);
   font-size: 20px;
   color: var(--white-color);
   border-bottom: 1px solid var(--white-color);
+}
+.home_main_conteiner .profile_link a:hover {
+  color: var(--green-color);
+  border-bottom: 1px solid var(--green-color);
 }
 .home_main {
   display: flex;
@@ -131,9 +135,13 @@ header .icons span {
   margin-bottom: 100px;
   border: none;
 }
+.home_main_button:hover {
+  background-color: var(--green-color);
+}
 .home_main_button a {
   font-weight: 700;
   font-size: 18px;
+  color: var(--white-color);
 }
 
 /* --------------------------PagesBlogsNAVandFooter---------------------------- */
@@ -147,8 +155,8 @@ nav .nav_logo_container {
   margin-left: 50px;
 }
 nav .nav_logo_container img {
-  width: 220px;
-  margin-top: 10px;
+  width: 100px;
+  margin-top: 5px;
 }
 
 nav .profile_link {
@@ -162,6 +170,10 @@ nav .profile_link a {
   font-size: 20px;
   color: var(--black-color);
   border-bottom: 1px solid var(--black-color);
+}
+nav .profile_link a:hover {
+  color: var(--green-color);
+  border-bottom: 1px solid var(--green-color);
 }
 footer {
   width: 100%;
@@ -216,6 +228,11 @@ footer p {
 }
 .blogs_button {
   border: 1px solid var(--menta-color);
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.blogs_button:hover {
+  border: 1px solid var(--green-color);
   padding: 10px 15px;
   font-size: 12px;
 }
