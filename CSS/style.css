@@ -67,9 +67,8 @@ header .icons span {
   color: var(--white-color);
 }
 /* --------------------Main------------------------------ */
+
 #main_home {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
   background-image: url(/images/Cover.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -78,37 +77,44 @@ header .icons span {
   justify-items: center;
   height: 100vh;
 }
-#main_home .nav_logo_container {
-  margin-left: 50px;
-}
-#main_home .nav_logo_container img {
-  width: 220px;
-  margin-top: 50px;
+.home_main_conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-#main_home .profile_link {
-  grid-column: 3;
-  align-items: center;
-  justify-content: center;
-  margin-right: 50px;
-  margin-top: 70px;
+.home_main_conteiner .nav_logo_container {
+  display: flex;
+  grid-column: 1;
+  margin-left: 50px;
+  margin-top: 50px;
 }
-#main_home .profile_link a {
+.home_main_conteiner .nav_logo_container img {
+  width: 220px;
+}
+
+.home_main_conteiner .profile_link {
+  display: flex;
+  grid-column: 2;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.home_main_conteiner .profile_link a {
   font-family: var(--RobotoMono-font-family);
   font-size: 20px;
   color: var(--white-color);
   border-bottom: 1px solid var(--white-color);
 }
 .home_main {
-  display: grid;
-  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
 }
 .home_main div {
   display: grid;
-  grid-column: 2;
   justify-items: center;
-  height: 350px;
 }
 .home_main_text {
   font-family: "Roboto Mono", monospace;
@@ -122,8 +128,6 @@ header .icons span {
   width: 150px;
   height: 60px;
   background-color: var(--menta-color);
-  display: grid;
-  align-items: center;
   margin-bottom: 100px;
   border: none;
 }
