@@ -257,21 +257,21 @@ footer p {
   text-align: center;
   padding-bottom: 50px;
 }
-.contact_main_conteiner div {
+.contact_main_conteiner .grid_container div {
   display: inline-block;
   width: 49.5%;
   height: 100%;
 }
-.contact_main_conteiner div a {
+.contact_main_conteiner .grid_container div a {
   border-bottom: 1px solid var(--black-color);
   padding-bottom: 5px;
 }
-.contact_main_conteiner .contact_left,
+.contact_main_conteiner .grid_container .contact_left,
 .contact_right {
   text-align: initial;
   margin-top: 85px;
 }
-.contact_main_conteiner img {
+.contact_main_conteiner .grid_container img {
   width: 100px;
 }
 
